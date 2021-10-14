@@ -1,0 +1,9 @@
+development:
+  featureOne: true
+  featureTwo: true
+staging:
+  featureOne: true
+  featureTwo: false
+production:
+  featureOne: false
+  featureTwo: false

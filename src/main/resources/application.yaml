@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    default: develoment
+
+features:
+  configuration:
+    file: "features-development.yaml"
+    profile: development
+---
+spring:
+  config:
+    activate:
+      on-profile: staging
+features:
+  configuration:
+    file: "features-staging.yaml"
+    profile: staging
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+features:
+  configuration:
+    file: "features-production.yaml"

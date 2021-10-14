@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    default: development
+
+features:
+  configuration:
+    file: "features-test.yaml"
+    profile: development

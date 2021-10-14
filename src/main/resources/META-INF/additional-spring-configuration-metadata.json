@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "features.configuration",
+      "type": "java.lang.String",
+      "description": "Feature flags configuration.",
+      "sourceType": "com.example.featureflagservice.configuration.processor.CustomProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "features.configuration.file",
+      "type": "java.lang.String",
+      "description": "File that contains environment specific features."
+    },
+    {
+      "name": "features.configuration.profile",
+      "type": "java.lang.String",
+      "description": "Spring profile."
+    }
+  ],
+  "hints": [
+    {
+      "name": "features.configuration.profile",
+      "values": [
+        {
+          "value": "development"
+        },
+        {
+          "value": "staging"
+        },
+        {
+          "value": "production"
+        }
+      ]
+    }
+  ]
+}
