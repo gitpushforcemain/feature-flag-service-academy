@@ -18,11 +18,11 @@ public class FeatureFlagServiceApplication {
     @Bean
     public String printEnvironment(
             Environment environment,
-            @Value("${features.configuration.profile}") String configurationProfile,
-            @Value("${features.configuration.file}") String configurationFile
+            @Value("${features.configuration.file}") String configurationFile,
+            @Value("${features.configuration.profile}") String configurationProfile
     ) {
-        System.out.println(configurationProfile);
         System.out.println(configurationFile);
+        System.out.println(configurationProfile);
 
         System.out.print("DEFAULT PROFILES: ");
         System.out.println(Arrays.toString(environment.getDefaultProfiles()));

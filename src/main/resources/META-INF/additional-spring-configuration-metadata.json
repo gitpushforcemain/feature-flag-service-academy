@@ -21,6 +21,23 @@
   ],
   "hints": [
     {
+      "name": "features.configuration.file",
+      "values": [
+        {
+          "value": "features-development.yaml"
+        },
+        {
+          "value": "features-test.yaml"
+        },
+        {
+          "value": "features-staging.yaml"
+        },
+        {
+          "value": "features-production.yaml"
+        }
+      ]
+    },
+    {
       "name": "features.configuration.profile",
       "values": [
         {

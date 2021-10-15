@@ -1,8 +1,10 @@
 spring:
   profiles:
     default: development
+  main:
+    banner-mode: off
 
 features:
   configuration:
-    file: "features-test.yaml"
+    file: features-test.yaml
     profile: development

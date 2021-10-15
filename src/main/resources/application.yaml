@@ -4,7 +4,7 @@ spring:
 
 features:
   configuration:
-    file: "features-development.yaml"
+    file: features-development.yaml
     profile: development
 ---
 spring:
@@ -13,8 +13,10 @@ spring:
       on-profile: staging
 features:
   configuration:
-    file: "features-staging.yaml"
+    file: features-staging.yaml
     profile: staging
+server:
+  port: 5000
 ---
 spring:
   config:
@@ -22,4 +24,7 @@ spring:
       on-profile: production
 features:
   configuration:
-    file: "features-production.yaml"
+    file: features-production.yaml
+    profile: production
+server:
+  port: 5000
